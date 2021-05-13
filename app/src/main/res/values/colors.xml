@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">@android:color/holo_green_dark</color>
+    <color name="colorAccent">#000000</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#004942</color>
+    <color name="teal_700">#004241</color>
+    <color name="black">#FF000000</color>
+    <color name="low_black">#A94C4C4C</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green">#B2FF59</color>
+    <color name="tranparent">#00FFFFFF</color>
+    <color name="todayText">#FFD740</color>
+    <color name="selectedDayText">#D5392C39</color>
+    <color name="gray">#D5403A40</color>
+    <color name="darkGray">#D5201A20</color>
+    <color name="normalBlack">#B5000000</color>
+    <color name="test">#FFB300</color>
+    <color name="horizontal_calendar_day_textcolor">#EC4848</color>
+    <color name="colorPrimaryLight">@color/co</color>
+    <color name="co">#0A306A</color>
+    <color name="lowco">#880A306A</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorGray">#F8F8F8</color>
+    <color name="colorGrayDark">#E3E3E3</color>
+    <color name="colorLine">#E4E4E4</color>
+    <color name="colorText">#939393</color>
+    <color name="colorTextSelected">#6B6B6B</color>
+
+    <color name="colorHover">#30818181</color>
+
+    <color name="primaryTextColor">#4d4d4d</color>
+    <color name="secundaryTextColor">#757575</color>
+    <color name="today_background">#85f7f7f7</color>
+    <color name="today_border">#e4e4e4</color>
+</resources>

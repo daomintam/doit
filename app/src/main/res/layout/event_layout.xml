@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:paddingLeft="35dp"
+    android:paddingRight="35dp"
+    android:paddingBottom="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/co"
+        android:text="Ăn sáng"
+        android:fontFamily="@font/ubuntu"
+        android:textStyle="bold"
+        android:textSize="9pt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/EventTitle">
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="00:00"
+            android:textSize="7pt"
+            android:textColor="@color/lowco"
+            android:fontFamily="@font/ubuntu_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/EventTime">
+        </TextView>
+        <TextView
+            android:text=" - "
+            android:textSize="7pt"
+            android:textColor="@color/lowco"
+            android:fontFamily="@font/ubuntu_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+        <TextView
+            android:paddingLeft="10dp"
+            android:textSize="7pt"
+            android:textColor="@color/lowco"
+            android:fontFamily="@font/ubuntu_light"
+            android:text="dd/MM/yyyy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/EventDate">
+        </TextView>
+        <TextView
+            android:text=" - "
+            android:textSize="7pt"
+            android:textColor="@color/lowco"
+            android:fontFamily="@font/ubuntu_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+        <TextView
+            android:paddingLeft="10dp"
+            android:textSize="7pt"
+            android:textColor="@color/lowco"
+            android:fontFamily="@font/ubuntu_light"
+            android:text="Office"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/EventLocation">
+        </TextView>
+    </LinearLayout>
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/co"
+        android:layout_marginBottom="20dp"></View>
+</LinearLayout>

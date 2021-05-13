@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView"
+            android:layout_width="match_parent"
+            android:layout_marginTop="80dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/doit"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="16dp">
+        </com.airbnb.lottie.LottieAnimationView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:id="@+id/iconBookStore"
+            android:layout_width="120dp"
+            android:layout_height="142dp"
+            android:src="@drawable/icon" />
+
+        <TextView
+            android:id="@+id/textHello"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="400dp"
+            android:fontFamily="@font/berkshire_swash"
+            android:gravity="center_horizontal"
+            android:text="Do It!"
+            android:textColor="@color/co"
+            android:textSize="20pt"></TextView>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

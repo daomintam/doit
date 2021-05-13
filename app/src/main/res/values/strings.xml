@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Do It</string>
+    <string name="save">Save</string>
+    <string name="new_task">New Task</string>
+    <string name="tasks">Tasks</string>
+    <string name="infoLocation">
+        Số 06 Trần Văn Ơn, phường Phú Hòa, TP. Thủ Dầu Một, Bình Dương
+    </string>
+    <string name="infoPhone">
+        (0274) 382 2518 <br /> (0274) 383 7150
+    </string>
+    <string-array name="type">
+        <item>Công việc</item>
+        <item>Ngày lễ</item>
+        <item>Sinh nhật</item>
+        <item>Tình yêu</item>
+        <item>Giải trí</item>
+        <item>Khác</item>
+    </string-array>
+    <string-array name="forewarned">
+        <item>2 Phút</item>
+        <item>3 Phút</item>
+        <item>5 Phút</item>
+    </string-array>
+    <string-array name="colors">
+        <item>#F44336</item>
+        <item>#E91E63</item>
+        <item>#9C27B0</item>
+        <item>#2196F3</item>
+        <item>#FF9800</item>
+        <item>#009688</item>
+    </string-array>
+</resources>

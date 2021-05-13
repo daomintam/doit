@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/activity_main"
+    android:background="#FFF"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:background="@drawable/view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/HelloTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu"
+                    android:paddingLeft="35dp"
+                    android:paddingTop="40dp"
+                    android:text="Chào buổi sáng"
+                    android:textColor="@color/white"
+                    android:textSize="14pt"
+                    android:textStyle="bold"></TextView>
+                <TextView
+                    android:id="@+id/textnote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/HelloTextView"
+                    android:fontFamily="@font/ubuntu"
+                    android:paddingLeft="35dp"
+                    android:text="Những công việc ngày hôm nay của bạn là"
+                    android:textColor="@color/white"
+                    android:textSize="8pt"></TextView>
+                <devs.mulham.horizontalcalendar.HorizontalCalendarView
+                    android:id="@+id/calendarView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#2CC9DBDD" />
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:background="@drawable/x"
+                        android:textColor="@color/co"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:layout_margin="10dp"
+                        android:id="@+id/CurrentDateTextview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:text="26/12/2020"
+                        android:fontFamily="@font/ubuntu_light"
+                        android:textAlignment="center"
+                        android:textSize="10pt"></TextView>
+                    <android.widget.TextClock
+                        android:fontFamily="@font/ubuntu_light"
+                        android:id="@+id/digitalClock"
+                        android:background="@drawable/x"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:format24Hour="HH:mm"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="00:00"
+                        android:textColor="@color/co"
+                        android:textSize="10pt"
+                        android:format12Hour="null"
+                        android:timeZone="GMT+7" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/nothing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="50dp"
+                    android:src="@drawable/nothing"
+                    android:visibility="gone"></ImageView>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:fontFamily="@font/ubuntu_light"
+                    android:textColor="@color/co"
+                    android:id="@+id/txtTatca"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="Tất cả:"
+                    android:textSize="9pt"></TextView>
+
+                <TextView
+                    android:textAlignment="center"
+                    android:fontFamily="@font/ubuntu_light"
+                    android:id="@+id/txtDahoanthanh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/b"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Đã hoàn thành:"
+                    android:textColor="@color/white"
+                    android:textSize="7pt"></TextView>
+
+                <TextView
+                    android:textAlignment="center"
+                    android:fontFamily="@font/ubuntu_light"
+                    android:id="@+id/txtConlai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/r"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Còn lại:"
+                    android:textColor="@color/white"
+                    android:textSize="7pt"></TextView>
+            </LinearLayout>
+
+                <ScrollView
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/tasksRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/digitalClock"
+                        android:nestedScrollingEnabled="true"
+                        android:padding="10dp"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        tools:listitem="@layout/task_layout" />
+                </ScrollView>
+        </LinearLayout>
+    </RelativeLayout>
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:fabCradleMargin="10dp"
+        app:fabCradleRoundedCornerRadius="10dp"
+        app:fabCradleVerticalOffset="10dp">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/transparent"
+            app:elevation="0dp"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/bottom_navigation" />
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationAdd"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_margin="5dp"
+        android:layout_marginTop="120dp"
+        app:layout_anchor="@+id/bottomAppBar"
+        app:layout_anchorGravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/add"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp" />
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/btn_add"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:backgroundTint="@color/co"-->
+<!--        app:tint="@color/white"-->
+<!--        android:contentDescription="@string/app_name"-->
+<!--        android:src="@drawable/ic_baseline_add_24"-->
+<!--        app:layout_anchor="@id/bottomAppBar" />-->
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+
+
